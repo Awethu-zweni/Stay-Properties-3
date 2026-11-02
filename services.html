@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties | STAY Properties</title>
+  <meta name="description" content="Browse current property listings from STAY Properties across Gauteng.">
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">STAY Properties</a>
+      <nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html" class="active">Properties</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Current Listings</h1>
+      <p>Browse our available properties across Gauteng.</p>
+    </section>
+
+    <!-- Full listing grid, all 10 properties -->
+    <section class="property-tools" aria-label="Property search and filters">
+      <label for="propertySearch">Search properties</label>
+      <input type="search" id="propertySearch" placeholder="e.g. Sandton, apartment, family home" aria-describedby="propertyCount">
+      <label for="propertyType">Filter by type</label>
+      <select id="propertyType">
+        <option value="all">All properties</option>
+        <option value="house">Family homes</option>
+        <option value="apartment">Apartments</option>
+        <option value="townhouse">Townhouses / cluster homes</option>
+        <option value="duplex">Duplexes</option>
+      </select>
+      <p id="propertyCount" class="property-count" aria-live="polite">10 properties shown</p>
+    </section>
+
+    <section class="featured-listings">
+      <div class="listing-grid">
+
+        <article class="listing-card" data-type="house" data-search="family home in sandton">
+          <img src="images/properties/sandton.webp" alt="Family home in Sandton">
+          <h3>Family Home in Sandton</h3>
+          <p class="price">R 2,450,000</p>
+          <p>3 bed &middot; 2 bath &middot; 220m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="apartment" data-search="apartment in randburg">
+          <img src="images/properties/randburg.webp" alt="Apartment in Randburg">
+          <h3>Apartment in Randburg</h3>
+          <p class="price">R 1,150,000</p>
+          <p>2 bed &middot; 1 bath &middot; 85m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="house" data-search="family home, east rand">
+          <img src="images/properties/east-rand.webp" alt="Family home in the East Rand">
+          <h3>Family Home, East Rand</h3>
+          <p class="price">R 1,980,000</p>
+          <p>4 bed &middot; 3 bath &middot; 260m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="townhouse" data-search="townhouse in roodepoort">
+          <img src="images/properties/roodepoort.webp" alt="Townhouse in Roodepoort">
+          <h3>Townhouse in Roodepoort</h3>
+          <p class="price">R 1,395,000</p>
+          <p>3 bed &middot; 2 bath &middot; 150m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="apartment" data-search="studio in rosebank">
+          <img src="images/properties/rosebank.webp" alt="Studio apartment in Rosebank">
+          <h3>Studio in Rosebank</h3>
+          <p class="price">R 895,000</p>
+          <p>1 bed &middot; 1 bath &middot; 48m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="house" data-search="family home in midrand">
+          <img src="images/properties/midrand.webp" alt="Family home in Midrand">
+          <h3>Family Home in Midrand</h3>
+          <p class="price">R 2,150,000</p>
+          <p>4 bed &middot; 2 bath &middot; 240m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="townhouse" data-search="cluster home in bedfordview">
+          <img src="images/properties/bedfordview.webp" alt="Cluster home in Bedfordview">
+          <h3>Cluster Home in Bedfordview</h3>
+          <p class="price">R 1,750,000</p>
+          <p>3 bed &middot; 2 bath &middot; 180m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="apartment" data-search="apartment in fourways">
+          <img src="images/properties/fourways.webp" alt="Apartment in Fourways">
+          <h3>Apartment in Fourways</h3>
+          <p class="price">R 1,050,000</p>
+          <p>2 bed &middot; 2 bath &middot; 90m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="house" data-search="family home in kempton park">
+          <img src="images/properties/kempton-park.webp" alt="Family home in Kempton Park">
+          <h3>Family Home in Kempton Park</h3>
+          <p class="price">R 1,620,000</p>
+          <p>3 bed &middot; 2 bath &middot; 200m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+        <article class="listing-card" data-type="duplex" data-search="duplex in edenvale">
+          <img src="images/properties/edenvale.webp" alt="Duplex in Edenvale">
+          <h3>Duplex in Edenvale</h3>
+          <p class="price">R 1,480,000</p>
+          <p>3 bed &middot; 2 bath &middot; 165m&sup2;</p>
+          <a href="enquiry.html" class="btn-secondary btn-small">Enquire</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2026 STAY Properties. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Properties</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>

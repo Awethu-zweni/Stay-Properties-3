@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | STAY Properties</title>
+  <meta name="description" content="Get in touch with STAY Properties about buying or selling a home.">
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">STAY Properties</a>
+      <nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Properties</a></li>
+          <li><a href="enquiry.html" class="active">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Make an Enquiry</h1>
+      <p>Have a question about a listing, or want to sell your home? Send us a message.</p>
+    </section>
+
+    <!-- Enquiry form: not wired to a backend yet, just structured for Part 1 -->
+    <section class="enquiry-form-section">
+      <form class="enquiry-form" id="enquiryForm" action="#" method="post" novalidate>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="property">Property of Interest (optional)</label>
+        <input type="text" id="property" name="property" placeholder="e.g. Family Home in Sandton">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        <button type="submit" class="btn-primary">Send Enquiry</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2026 STAY Properties. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Properties</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
